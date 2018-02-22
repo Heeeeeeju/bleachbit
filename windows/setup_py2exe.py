@@ -370,6 +370,9 @@ def upx():
         logger.warning('Fast mode: Skipped executable with UPX')
         return
 
+    logger.info('skipping UPX')
+    return
+
     if not os.path.exists(UPX_EXE):
         logger.warning('To compress executables, install UPX to: ' + UPX_EXE)
         return
