@@ -444,7 +444,9 @@ def shrink():
     clean_translations()
 
     try:
-        strip()
+        #strip()
+        logger.info('skipping strip')
+        pass
     except Exception:
         logger.exception(
             'Error when running strip. Does your PATH have MINGW with binutils?')
